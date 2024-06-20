@@ -101,10 +101,11 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
+            position: relative;
         }
         .video-section iframe {
             width: 80%;
-            height: 450px;
+            height: 730px;
             border: none;
             border-radius: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -124,6 +125,31 @@
         }
         .hidden {
             visibility: hidden;
+        }
+        .marquee {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 20px;
+            padding: 10px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
     </style>
 </head>
@@ -151,27 +177,30 @@
             <p id="bio" class="hidden">President, Chief Executive Officer and Chair of AMD</p>
             <h2>BIO</h2>
             <div class="blue-background">
-                <p id="bio-content" class="hidden">Taiwanese American entrepreneur<br>AGE&emsp;&emsp;&emsp;&emsp;&ensp;|54<br>KNOWN FOR&ensp;| Semiconductor design, Silicon-on-insulator design</p>
+                <p id="bio-content" class="hidden">台裔美國企業家<br>年齡&emsp;&emsp;&emsp;&emsp;&ensp;|54<br>知名於&ensp;| 半導體設計，絕緣層上矽設計</p>
             </div>
             <h2>EDUCATION</h2>
             <div class="blue-background">
-                <p id="education-content" class="hidden">Bronx High School of Science<br>MIT EECS</p>
+                <p id="education-content" class="hidden">布朗克斯科學高中<br>麻省理工學院電機工程及計算機科學</p>
             </div>
             <h2>WORKING</h2>
             <div class="blue-background">
-                <p id="working-content" class="hidden">1994-1999 IBM R&D<br>2000-2007 IBM Emerging Products Division<br>2007-2011 Freescale Semiconductor<br>2012-2014 AMD Appointments<br>2015-&emsp;&emsp;&ensp;AMD CEO<br>2017-&emsp;&emsp;&ensp;AMD RYZEN</p>
+                <p id="working-content" class="hidden">1994-1999 IBM 研發部門<br>2000-2007 IBM 新興產品部門<br>2007-2011 飛思卡爾半導體<br>2012-2014 AMD 任命<br>2015-&emsp;&emsp;&ensp;AMD CEO<br>2017-&emsp;&emsp;&ensp;AMD Ryzen</p>
             </div>
         </div>
         <div class="right">
             <h2>AWARD</h2>
             <div class="blue-background">
-                <p id="award-content" class="hidden">Westinghouse Science Talent Search<br>2021 | Forbes Top 100 Women<br>IEEE Robert N Noyce Medal 2021 Honoree<br>2023 | Forbes The World 100 Most Powerful Women No. 49</p>
+                <p id="award-content" class="hidden">西屋科學獎<br>2021 | 福布斯百大女性<br>2021 IEEE 羅伯特·N·諾伊斯獎章獲獎者<br>2023 | 福布斯全球百大最有權勢女性第49位</p>
             </div>
             <h2>BRAND</h2>
         </div>
     </div>
     <div class="video-section">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MCi8jgALPYA?si=mS7CnBjaR61XGXpn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="marquee">
+            <span>台積、超微夠麻吉！ 蘇姿丰合影魏哲家、與何麗梅暢談人生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI教父黃仁勳、半導體女王蘇姿丰瞄準的下一個戰場：全球10大數據中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;逆襲英特爾、對陣輝達！蘇姿丰的AMD「二次創業」之路      </span>
+        </div>
+        <iframe width="1120" height="730" src="https://www.youtube.com/embed/MCi8jgALPYA?si=mS7CnBjaR61XGXpn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </div>
 
