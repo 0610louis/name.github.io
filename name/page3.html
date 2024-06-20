@@ -54,7 +54,7 @@
         .section {
             flex: 1;
             width: 100%;
-            max-width: 800px; /* 調整最大寬度以便更好的內容顯示 */
+            max-width: 800px;
             margin: 20px 0;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.1);
@@ -79,6 +79,17 @@
             font-size: 18px;
             line-height: 1.6;
             color: #f0f0f0;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         @keyframes fadeIn {
             from {
@@ -116,6 +127,11 @@
     <div class="section">
         <h2>PRODUCT</h2>
         <p>Under Lisa Su's leadership, AMD has driven the development of many significant products and technologies, including the Ryzen processor series, Radeon graphics card series, and EPYC server processor series.</p>
+        <div class="image-container">
+            <img src="product1.png" alt="Image 1">
+            <img src="product2.png" alt="Image 2">
+            <img src="product3.png" alt="Image 3">
+        </div>
     </div>
 </div>
 
